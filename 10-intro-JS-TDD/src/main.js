@@ -1,11 +1,18 @@
 module.exports = add;
 
 function add(a, b) {
-     if(isANumber(a) && isANumber(b)){
-         return a + b;
-     } else {
-         return 0;
-     }
+    if (isANumber(a) && isANumber(b)) {
+        return a + b;
+    } else if (isANumber(a)) {
+        return a;
+    }
+    else if (isANumber(b)) {
+        return b;
+    }
+
+    else {
+        return 0;
+    }
 
 
 }
